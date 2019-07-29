@@ -7,12 +7,16 @@
     
 }
 
-.btn-style(@bg-color, @color, @font-size){
-    align-items: center;
-    background: @bg-color;
+.btn-style(@font-size, @width){
+    .flex(row, center);
+    background: @link-bg;
     font-size: @font-size;
-    font-weight: 600;
-    color:  @color;
+    width: @width;
+    color:  white;
     border-radius: 5px;
     text-decoration: none;
+    align-items: center;
+    text-decoration: none;
+    background: @link-bg;
+    color: white;
 }
