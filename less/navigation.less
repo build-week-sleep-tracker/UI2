@@ -11,7 +11,8 @@ nav{
         height: 50px;
         background: @nav-bg;
         padding: 2% 2%;
-         @media @desktop{
+
+         @media @tablet{
          }
         
 
@@ -23,6 +24,11 @@ nav{
             h3{
                 font-size: 1.4rem;
                 color: white;
+                display: none;
+                @media @tablet{
+                    display: block;
+                }
+
             }
             
             img{
