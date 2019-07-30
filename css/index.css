@@ -220,7 +220,7 @@ header {
   justify-content: center;
   height: 300px;
   margin-top: 50px;
-  background: url("/img/Header-Bed.jpg") no-repeat center center / cover;
+  background: url("../img/Header-Bed.jpg") no-repeat center center / cover;
   color: white;
   font-weight: 600;
 }
@@ -228,11 +228,6 @@ header {
   header {
     justify-content: flex-start;
   }
-}
-header .uvp {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 @media (min-width: 500px) {
   header .uvp {
@@ -285,32 +280,32 @@ header a {
   }
 }
 .container .content .f1 {
-  background: url("/img/alarm1.jpg") no-repeat center center / cover;
+  background: url("../img/alarm1.jpg") no-repeat center center / cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container .content .f2 {
-  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
+  background: url("../img/Sleeping.jpg") no-repeat center center / cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container .content .f3 {
-  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
+  background: url("../img/Sleeping.jpg") no-repeat center center / cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container .content .f4 {
-  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
+  background: url("../img/Sleeping.jpg") no-repeat center center / cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container .content .f5 {
-  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
+  background: url("../img/Sleeping.jpg") no-repeat center center / cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container .content .f6 {
-  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
+  background: url("../img/Sleeping.jpg") no-repeat center center / cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
