@@ -154,7 +154,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   color: #100359;
@@ -171,9 +171,9 @@ nav .nav-container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 75px;
+  padding: 0% 2%;
   background: #100359;
-  padding: 2% 2%;
 }
 nav .nav-container .logo {
   display: flex;
@@ -218,8 +218,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 300px;
-  margin-top: 50px;
+  height: 350px;
+  margin-top: 75px;
   background: url("/img/Header-Bed.jpg") no-repeat center center / cover;
   color: white;
   font-weight: 600;
@@ -229,9 +229,12 @@ header {
     justify-content: flex-start;
   }
 }
+header .uvp {
+  padding: 0% 2%;
+}
 @media (min-width: 500px) {
   header .uvp {
-    width: 300px;
+    width: 400px;
     padding: 1% 2%;
   }
 }
@@ -257,7 +260,7 @@ header a {
 }
 @media (min-width: 500px) {
   header a {
-    width: 100%;
+    width: 75%;
   }
 }
 .container {
@@ -330,7 +333,8 @@ header a {
   width: 100%;
   text-align: center;
   font-size: 3rem;
-  background: rgba(255, 255, 255);
+  padding-bottom: 2%;
+  background: rgba(255, 255, 255, 0.6);
 }
 @media (min-width: 500px) {
   .container .content .features h1 {
