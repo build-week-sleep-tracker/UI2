@@ -1,0 +1,123 @@
+header{
+    .flex(column, center);
+    height: 300px;
+    margin-top: 50px;
+    background:  url("/img/Header-Bed.jpg") no-repeat center center/cover;
+    color: white;
+    font-weight: 600;
+    @media @tablet{
+        justify-content: flex-start;
+    }
+
+    .uvp{
+        .flex(column, flex-start);
+        @media @tablet{
+            width: 300px;
+            padding: 1% 2%;
+        }
+    }
+
+    h1{
+        font-size: 3.5rem;
+        margin: 2% 0%;
+    }
+
+    a{
+        .flex(row, center);
+        .btn-style(1.5rem, 50%);
+        height: 40px;
+        width: 150px;
+        margin: 40px 0%;
+        font-size: 2rem;
+        @media @tablet{
+            width: 100%;
+        }
+
+    }
+}
+.container{
+    padding: 4%;
+
+    .features-intro{
+        font-size: 2.6rem;
+        // white-space: nowrap;
+        font-weight: 600;
+        // text-align: center;
+    }
+    .content{
+        .flex(column, space-between);
+        align-items: center;
+        @media @tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    
+        .f1 {
+            background:  url("/img/alarm1.jpg") no-repeat center center/cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .f2 {
+            background:  url("/img/Sleeping.jpg") no-repeat center center/cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .f3 {
+            background:  url("/img/Sleeping.jpg") no-repeat center center/cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .f4 {
+            background:  url("/img/Sleeping.jpg") no-repeat center center/cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .f5 {
+            background:  url("/img/Sleeping.jpg") no-repeat center center/cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .f6 {
+            background:  url("/img/Sleeping.jpg") no-repeat center center/cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            }
+
+        .features{
+            .flex(column, flex-end);
+            align-items: center;
+            height: 200px;
+            width: 100%;
+            margin: 20px 0px;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @media @tablet{ 
+                width: 32%;
+                height: 200px;
+            }
+
+
+            h1{
+                width: 100%;
+                text-align: center;
+                font-size: 3rem;
+                margin-bottom: 4%;
+                background: rgba(255, 255, 255, .3);
+                // white-space: nowrap;
+
+                @media @tablet {
+                    font-size: 2rem;
+                }
+            }
+
+        }//features
+
+    }//content
+
+}//container
