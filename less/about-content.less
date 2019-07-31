@@ -1,0 +1,116 @@
+// header {
+//     .flex(column, center);
+//     height: 350px;
+//     margin-top: 75px;
+//     background:  url("/img/Header-Bed.jpg") no-repeat center center/cover;
+//     color: white;
+//     font-weight: 600;
+//     @media @tablet{
+//         justify-content: flex-start;
+//         height: 450px;
+
+//     }
+
+//     .uvp {
+//         padding: 0% 2%;
+//         width: 100%;
+//         height: 400px;
+
+//         @media @tablet{
+//             width: 400px;
+//             margin-left: 8%;
+//             padding: 1% 1%;
+//         }
+//     }
+
+//     h1{
+//         font-size: 3.5rem;
+//         margin: 2% 0%;
+//     }
+
+//     a{
+//         .flex(row, center);
+//         .btn-style(1.5rem, 50%);
+//         height: 40px;
+//         width: 150px;
+//         margin: 15px 0%;
+//         font-size: 2rem;
+//         @media @tablet{
+//             width: 75%;
+//         }
+
+//     }
+// }
+.container{
+    padding: 2%;
+
+    @media @tablet{
+        padding: 0%
+    }
+
+
+    .about-intro{
+        font-size: 2.6rem;
+        font-weight: 600;
+        margin-top: 40px;
+
+    }
+
+    .content{
+        .flex(column, space-between);
+        align-items: center;
+
+        @media @tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .person {
+            .flex(column, flex-start);
+            align-items: center;
+            height: 350px;
+            width: 100%;
+            margin: 20px 0px;
+            
+            // padding: 25px 16px;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @media @tablet{ 
+                width: 32%;
+                height: 300px;
+            }
+
+            .img-contain{
+                .flex(row, center);
+                width: 100%;
+                img {
+                    width: 200px;
+                    max-width: 100%;
+                    height: 230px;
+                    border-radius: 20%;
+                    transform: rotate(90deg);
+                    text-align: center;
+                    position: relative;
+                    z-index: -1;
+                }
+            }
+            
+            .fab{
+                font-size: 4rem;
+            }
+
+
+            h1{
+                // width: 50%;
+                font-size: 4rem;
+                font-weight: 600;
+                // white-space: nowrap;
+                @media @tablet {
+                    font-size: 3rem;
+                }
+
+            }
+        }    
+    }
+}

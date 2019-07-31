@@ -320,14 +320,14 @@ header a {
   height: 350px;
   width: 100%;
   margin: 20px 0px;
-  padding: 28px 16px;
+  padding: 25px 16px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 500px) {
   .container .content .features {
     width: 32%;
-    height: 200px;
+    height: 300px;
   }
 }
 .container .content .features h1 {
