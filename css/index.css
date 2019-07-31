@@ -227,15 +227,19 @@ header {
 @media (min-width: 500px) {
   header {
     justify-content: flex-start;
+    height: 450px;
   }
 }
 header .uvp {
   padding: 0% 2%;
+  width: 100%;
+  height: 400px;
 }
 @media (min-width: 500px) {
   header .uvp {
     width: 400px;
-    padding: 1% 2%;
+    margin-left: 8%;
+    padding: 1% 1%;
   }
 }
 header h1 {
@@ -255,7 +259,7 @@ header a {
   color: white;
   height: 40px;
   width: 150px;
-  margin: 40px 0%;
+  margin: 15px 0%;
   font-size: 2rem;
 }
 @media (min-width: 500px) {
@@ -264,11 +268,17 @@ header a {
   }
 }
 .container {
-  padding: 4%;
+  padding: 2%;
+}
+@media (min-width: 500px) {
+  .container {
+    padding: 0%;
+  }
 }
 .container .features-intro {
   font-size: 2.6rem;
   font-weight: 600;
+  margin-top: 40px;
 }
 .container .content {
   display: flex;
@@ -282,44 +292,35 @@ header a {
     flex-wrap: wrap;
   }
 }
-.container .content .f1 {
+.container .content .quality {
+  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
+}
+.container .content .alarm {
   background: url("/img/alarm1.jpg") no-repeat center center / cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+  color: white;
 }
-.container .content .f2 {
-  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+.container .content .mood {
+  background: url("/img/sleepy pug.jpg") no-repeat center center / cover;
+  color: white;
 }
-.container .content .f3 {
-  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+.container .content .co-sleep {
+  background: url("/img/co-sleeping.jpg") no-repeat center center / cover;
 }
-.container .content .f4 {
-  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+.container .content .pairing {
+  background: url("/img/phone.jpg") no-repeat center center / cover;
 }
-.container .content .f5 {
-  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.container .content .f6 {
-  background: url("/img/Sleeping.jpg") no-repeat center center / cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+.container .content .insights {
+  background: url("/img/lightbulb.jpg") no-repeat center center / cover;
+  color: white;
 }
 .container .content .features {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  height: 200px;
+  justify-content: flex-start;
+  height: 350px;
   width: 100%;
   margin: 20px 0px;
+  padding: 28px 16px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -331,10 +332,8 @@ header a {
 }
 .container .content .features h1 {
   width: 100%;
-  text-align: center;
   font-size: 3rem;
-  padding-bottom: 2%;
-  background: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
 }
 @media (min-width: 500px) {
   .container .content .features h1 {
