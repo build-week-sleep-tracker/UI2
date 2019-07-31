@@ -6,34 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/about.css">
     <script src="https://kit.fontawesome.com/d5432abfd8.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <title>Sleep Tracker-About Us</title>
 </head>
 <body>
     <nav>
-        <div class="nav-container">       
-            <div class="logo">
-                <a href="index.html"><img src="img/Cloud Logo.svg" alt="A text bubble with zzz inside it"><h3>Sleep Tracker</h3></a>
+            <div class="nav-container">       
+                <div class="logo">
+                    <a href="index.html"><img src="img/Cloud Logo.svg" alt="A text bubble with zzz inside it"><h3>Sleep Tracker</h3></a>
+                    
+                </div>
                 
+                <div class="links">
+                    <button  class="fas fa-bars" ></button>
+                    <!-- <a class="hamburger" href=""><i class="fas fa-bars"></i></a> -->
+                    <a class="tablet-link" href="">Sign In</a>
+                    <a class="tablet-link" href="about.html">About Us</a>
+                </div>
             </div>
-            
-            <div class="links">
-                <!-- <a href="">&#9776;</a> -->
-                <a href="">Sign In</a>
-                <a href="">About Us</a>
-            </div>
-        </div>
-    </nav>
     
-    <!-- <header>
-        <div class="uvp">
-            <h1>Sleep Tracker</h1>
-            
-            <p>Helping you build healthy sleep habits one night at a time.</p>
-            
-            <a href="">Sign Up</a>
-            
-        </div>
-    </header> -->
+            <div class="hamburger-links" id="view">
+                <a href="">Sign In</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </nav>
+    
     
     <div class="container">
         <div class="about-intro">
@@ -52,7 +52,7 @@
 
                     <h2>Backend Developer</h2>
 
-                    <a href=""><i class="fab fa-github-square"></i></a>
+                    <a href="https://github.com/AaronJThompson"><i class="fab fa-github-square"></i></a>
             </div>
 
             <div class="person patrick">
@@ -64,7 +64,7 @@
 
                     <h2>Frontend Devoloper</h2>
 
-                    <a href=""><i class="fab fa-github-square"></i></a>
+                    <a href="https://github.com/patrick-gordon"><i class="fab fa-github-square"></i></a>
             </div>
 
             <div class="person conor">
@@ -76,7 +76,7 @@
 
                     <h2>Frontend Devoloper</h2>
 
-                    <a href=""><i class="fab fa-github-square"></i></a>
+                    <a href="https://github.com/czclaxton"><i class="fab fa-github-square"></i></a>
             </div>
 
             <div class="person alec">
@@ -88,7 +88,7 @@
 
                     <h2>Frontend Devoloper</h2>
 
-                    <a href=""><i class="fab fa-github-square"></i></a>
+                    <a href="https://github.com/AlecThomasQuinn"><i class="fab fa-github-square"></i></a>
             </div>
 
             <div class="person harper">
@@ -112,7 +112,7 @@
 
                     <h2>UI Devoloper</h2>
 
-                    <a href=""><i class="fab fa-github-square"></i></a>
+                    <a href="https://github.com/etridgely"><i class="fab fa-github-square"></i></a>
             </div>     
             
             <div class="person matt">
@@ -124,7 +124,7 @@
 
                     <h2>UI Devoloper</h2>
 
-                    <a href=""><i class="fab fa-github-square"></i></a>
+                    <a href="https://github.com/MSquared88"><i class="fab fa-github-square"></i></a>
             </div>       
 
 
@@ -136,5 +136,12 @@
          
     </div>  <!-- container-->
 
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                    $(".hamburger-links").toggle();
+            });
+        });
+    </script>
 </body>
 </html>
