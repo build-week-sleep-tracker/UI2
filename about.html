@@ -5,84 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/about.css">
+    <script src="https://kit.fontawesome.com/d5432abfd8.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <title>Sleep Tracker-About Us</title>
 </head>
 <body>
     <nav>
-        <div class="nav-container">       
-            <div class="logo">
-                <a href="index.html"><img src="img/Cloud Logo.svg" alt="A text bubble with zzz inside it"><h3>Sleep Tracker</h3></a>
+            <div class="nav-container">       
+                <div class="logo">
+                    <a href="index.html"><img src="img/Cloud Logo.svg" alt="A text bubble with zzz inside it"><h3>Sleep Tracker</h3></a>
+                    
+                </div>
                 
+                <div class="links">
+                    <button  class="fas fa-bars" ></button>
+                    <!-- <a class="hamburger" href=""><i class="fas fa-bars"></i></a> -->
+                    <a class="tablet-link" href="">Sign In</a>
+                    <a class="tablet-link" href="about.html">About Us</a>
+                </div>
             </div>
-            
-            <div class="links">
-                <!-- <a href="">&#9776;</a> -->
-                <a href="">Sign In</a>
-                <a href="">About Us</a>
-            </div>
-        </div>
-    </nav>
     
-    <!-- <header>
-        <div class="uvp">
-            <h1>Sleep Tracker</h1>
-            
-            <p>Helping you build healthy sleep habits one night at a time.</p>
-            
-            <a href="">Sign Up</a>
-            
-        </div>
-    </header> -->
+            <div class="hamburger-links" id="view">
+                <a href="">Sign In</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </nav>
+    
     
     <div class="container">
         <div class="about-intro">
-            <h1>The best features for the best sleep</h1>
+            <h1>Meet The Team</h1>
 
         </div>
 
         <div class="content">
 
-            <div class="person person1">
-                    <h1>Sleep Quality</h1> 
+            <div class="person aaron">
+                    <div class="img-contain">
+                        <img src="img/arron.PNG" alt="">
+                    </div>
 
-                    <p>Bettersleep, guaranteed</p>
+                    <h1>Aaron Thompson</h1> 
+
+                    <h2>Backend Developer</h2>
+
+                    <a href="https://github.com/AaronJThompson"><i class="fab fa-github-square"></i></a>
             </div>
 
-            <div class="person person2">
-                    <h1>Smart Alarm</h1> 
+            <div class="person patrick">
+                    <div class="img-contain">
+                            <img src="img/patrick.PNG" alt="">
+                    </div>
 
-                    <p>Never oversleep again</p>
+                    <h1>Patrick Gordon</h1> 
 
+                    <h2>Frontend Devoloper</h2>
+
+                    <a href="https://github.com/patrick-gordon"><i class="fab fa-github-square"></i></a>
             </div>
 
-            <div class="person person3">
-                    <h1>Mood Tracking</h1> 
+            <div class="person conor">
+                    <div class="img-contain">
+                        <img src="img/conor.PNG" alt="">
+                    </div>
 
-                    <p>How does your sleep affect your mood</p>
+                    <h1>Conor C</h1> 
 
+                    <h2>Frontend Devoloper</h2>
+
+                    <a href="https://github.com/czclaxton"><i class="fab fa-github-square"></i></a>
             </div>
 
-            <div class="person person4">
-                <h1>Co-Sleeping mode</h1> 
+            <div class="person alec">
+                    <div class="img-contain">
+                        <img src="img/alec.PNG" alt="">
+                    </div>
 
-                <p>Because sometimes you have company</p>
+                    <h1>Alec Quinn</h1> 
 
+                    <h2>Frontend Devoloper</h2>
 
+                    <a href="https://github.com/AlecThomasQuinn"><i class="fab fa-github-square"></i></a>
             </div>
 
-            <div class="person person5">
-                    <h1>Device Pairing</h1> 
+            <div class="person harper">
+                    <div class="img-contain">
+                        <img src="img/harper.PNG" alt="">
+                    </div>
 
-                    <p>Tracking your sleep has never been easier</p>
+                    <h1>Harper Atlas</h1> 
 
+                    <h2>UI/UX Developer</h2>
+
+                    <!-- <a href=""><i class="fab fa-github-square"></i></a> -->
             </div>
 
-            <div class="person person6">
-                    <h1>Sleep Insights</h1> 
-                    
-                    <p>Learn more about building healthy sleep habits</p>
+            <div class="person ed">
+                    <div class="img-contain">
+                        <img src="img/edward.PNG" alt="">
+                    </div>
 
+                    <h1>Edward Ridgley</h1> 
+
+                    <h2>UI Devoloper</h2>
+
+                    <a href="https://github.com/etridgely"><i class="fab fa-github-square"></i></a>
+            </div>     
+            
+            <div class="person matt">
+                    <div class="img-contain">
+                        <img src="img/matt2.PNG" alt="">
+                    </div>
+
+                    <h1>Matthew Meeves</h1> 
+
+                    <h2>UI Devoloper</h2>
+
+                    <a href="https://github.com/MSquared88"><i class="fab fa-github-square"></i></a>
             </div>       
+
 
          </div>  <!-- content-->
 
@@ -92,5 +136,12 @@
          
     </div>  <!-- container-->
 
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                    $(".hamburger-links").toggle();
+            });
+        });
+    </script>
 </body>
 </html>

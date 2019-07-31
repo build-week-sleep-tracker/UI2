@@ -160,11 +160,15 @@ p {
   color: #100359;
 }
 nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   top: 0;
   width: 100%;
   background: #100359;
   overflow: hidden;
   position: fixed;
+  z-index: 1;
 }
 nav .nav-container {
   display: flex;
@@ -198,21 +202,66 @@ nav .nav-container .links {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 200px;
+  width: 100px;
 }
-nav .nav-container .links a {
+@media (min-width: 500px) {
+  nav .nav-container .links {
+    width: 250px;
+  }
+}
+nav .nav-container .links button {
+  color: white;
+  font-size: 3rem;
+  border: none;
+  background: #100359;
+}
+@media (min-width: 500px) {
+  nav .nav-container .links button {
+    display: none;
+  }
+}
+nav .nav-container .links .tablet-link {
+  display: none;
+}
+@media (min-width: 500px) {
+  nav .nav-container .links .tablet-link {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 400px;
+    border-radius: 5px;
+    align-items: center;
+    text-decoration: none;
+    background: #1e8ad2;
+    color: white;
+    margin: 3% 2%;
+    padding: 4% 4%;
+  }
+}
+nav #view {
+  display: none;
+}
+nav .hamburger-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+nav .hamburger-links a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 1.5rem;
-  width: 100px;
+  font-size: 3rem;
+  width: 100%;
   border-radius: 5px;
   align-items: center;
   text-decoration: none;
   background: #1e8ad2;
   color: white;
-  margin: 3% 2%;
-  padding: 4% 4%;
+  border-radius: 0;
+  margin: 1px 0%;
 }
 header {
   display: flex;
@@ -294,6 +343,7 @@ header a {
 }
 .container .content .quality {
   background: url("/img/Sleeping.jpg") no-repeat center center / cover;
+  color: white;
 }
 .container .content .alarm {
   background: url("/img/alarm1.jpg") no-repeat center center / cover;
@@ -320,14 +370,14 @@ header a {
   height: 350px;
   width: 100%;
   margin: 20px 0px;
-  padding: 28px 16px;
+  padding: 25px 16px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 500px) {
   .container .content .features {
     width: 32%;
-    height: 200px;
+    height: 300px;
   }
 }
 .container .content .features h1 {
