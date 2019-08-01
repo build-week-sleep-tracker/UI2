@@ -65,6 +65,11 @@
         @media @tablet{
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media @desktop {
+            justify-content: space-between;
         }
 
         .person {
@@ -78,8 +83,12 @@
             box-shadow: 5px 5px 8px #100359;
 
             @media @tablet{ 
-                width: 380px;
+                width: 500px;
                 height: 420px;
+            }
+
+            @media @desktop {
+                width: 380px;
             }
 
             .img-contain{

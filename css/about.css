@@ -168,7 +168,7 @@ nav {
   background: #100359;
   overflow: hidden;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 nav .nav-container {
   display: flex;
@@ -294,6 +294,12 @@ nav .hamburger-links a {
   .container .content {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 800px) {
+  .container .content {
+    justify-content: space-between;
   }
 }
 .container .content .person {
@@ -310,8 +316,13 @@ nav .hamburger-links a {
 }
 @media (min-width: 500px) {
   .container .content .person {
-    width: 380px;
+    width: 500px;
     height: 420px;
+  }
+}
+@media (min-width: 800px) {
+  .container .content .person {
+    width: 380px;
   }
 }
 .container .content .person .img-contain {
