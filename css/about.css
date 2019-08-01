@@ -185,6 +185,9 @@ nav .nav-container .logo {
   justify-content: space-between;
   align-items: flex-end;
 }
+nav .nav-container .logo a {
+  text-decoration: none;
+}
 nav .nav-container .logo h3 {
   font-size: 1.4rem;
   color: white;
@@ -298,16 +301,17 @@ nav .hamburger-links a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 380px;
+  height: 420px;
   width: 100%;
   margin: 3% 0%;
   background: #E5E1F9;
   border-radius: 3%;
+  box-shadow: 5px 5px 2px 5px #aaaaaa;
 }
 @media (min-width: 500px) {
   .container .content .person {
     width: 380px;
-    height: 380px;
+    height: 420px;
   }
 }
 .container .content .person .img-contain {
