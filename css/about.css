@@ -306,7 +306,7 @@ nav .hamburger-links a {
   margin: 3% 0%;
   background: #E5E1F9;
   border-radius: 3%;
-  box-shadow: 5px 5px 2px 5px #aaaaaa;
+  box-shadow: 5px 5px 8px #100359;
 }
 @media (min-width: 500px) {
   .container .content .person {
@@ -321,8 +321,7 @@ nav .hamburger-links a {
   width: 100%;
 }
 .container .content .person .img-contain img {
-  width: 200px;
-  max-width: 100%;
+  width: 230px;
   height: 230px;
   border-radius: 50%;
   text-align: center;
