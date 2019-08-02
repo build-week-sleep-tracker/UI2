@@ -217,11 +217,16 @@ nav .nav-container .links button {
   font-size: 3rem;
   border: none;
   background: #100359;
+  outline: none;
 }
 @media (min-width: 500px) {
   nav .nav-container .links button {
     display: none;
   }
+}
+nav .nav-container .links button:hover {
+  color: #100359;
+  background: white;
 }
 nav .nav-container .links .tablet-link {
   display: none;
@@ -242,6 +247,10 @@ nav .nav-container .links .tablet-link {
     margin: 3% 2%;
     padding: 4% 4%;
   }
+}
+nav .nav-container .links .tablet-link:hover {
+  box-shadow: 2px 2px 2px 2px black;
+  transform: translateY(-0.25em);
 }
 nav #view {
   display: none;

@@ -55,14 +55,19 @@ nav{
                 font-size: 3rem;
                 border: none;
                 background: @nav-bg;
+                outline: none;
 
                 @media @tablet{
                     display: none;
                 }
             }
+            button:hover{
+                color: @nav-bg;
+                background: white; 
+            }
             .tablet-link{
                 display: none;
-
+            
                 @media @tablet{
                     display: block;
                     .flex(row, center);
@@ -70,7 +75,12 @@ nav{
                     margin: 3% 2%;
                     padding: 4% 4%;
                 }
+            
+            }
 
+            .tablet-link:hover {
+                box-shadow: 2px 2px 2px 2px black;
+                transform: translateY(-0.25em);
             }
 
         }//.links
