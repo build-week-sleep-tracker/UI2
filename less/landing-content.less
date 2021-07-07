@@ -1,0 +1,193 @@
+header {
+    .flex(column, center);
+    height: 350px;
+    margin-top: 75px;
+    background:  url("/img/Header-Bed.jpg") no-repeat center center/cover;
+    color: white;
+    font-weight: 600;
+    @media @tablet{
+        justify-content: flex-start;
+        height: 450px;
+
+    }
+
+    .uvp {
+        padding: 0% 2%;
+        width: 100%;
+        height: 400px;
+
+        @media @tablet{
+            width: 400px;
+            margin-left: 8%;
+            padding: 1% 1%;
+        }
+    }
+
+    h1{
+        font-size: 3.5rem;
+        margin: 2% 0%;
+    }
+
+    a{
+        .flex(row, center);
+        .btn-style(1.5rem, 50%);
+        height: 40px;
+        width: 150px;
+        margin: 15px 0%;
+        font-size: 2rem;
+        @media @tablet{
+            width: 75%;
+        }
+
+    }
+
+    
+    a:hover {
+        box-shadow: 2px 2px 5px 2px @body-color;
+    }
+}
+.container{
+    padding: 2%;
+
+    @media @tablet{
+        padding: 0%
+    }
+
+
+    .features-intro{
+        font-size: 2.6rem;
+        font-weight: 600;
+        margin-top: 40px;
+        
+    }
+    .content{
+        .flex(column, space-between);
+        align-items: center;
+        @media @tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        .quality {
+            background:  url("/img/Sleeping.jpg") no-repeat center center/cover;
+            color: white;
+            .tint {
+                width: 100%;
+                height: 100%;
+                background: #100359;
+                opacity: .2;
+                position: absolute;
+            }
+            
+        }
+        
+        .alarm {
+            background:  url("/img/alarm1.jpg") no-repeat center center/cover;
+            color: white;
+            .tint {
+                width: 100%;
+                height: 100%;
+                background: #3421A1;
+                opacity: .1;
+                position: absolute;
+            }
+            
+        }
+        
+        .mood {
+            background:  url("/img/sleepy pug.jpg") no-repeat center center/
+            cover;
+            color: white;
+            .tint {
+                width: 100%;
+                height: 100%;
+                background: #3421A1;
+                opacity: .1;
+                position: absolute;
+            }
+            
+            
+        }
+        
+        .co-sleep {
+            background:  url("/img/co-sleeping.jpg") no-repeat center center/cover;
+
+            .tint {
+                width: 100%;
+                height: 100%;
+                background: #F6F4FF;
+                opacity: .2;
+                position: absolute;
+            }
+        }
+        
+        .pairing {
+            background:  url("/img/phone.jpg") no-repeat center center/cover;
+
+            .tint {
+                width: 100%;
+                height: 100%;
+                background: #E5E1F9;
+                opacity: .3;
+                position: absolute;
+            }
+            
+        }
+        
+        .insights {
+            background:  url("/img/lightbulb.jpg") no-repeat center center/cover;
+            color: white;
+
+            .tint {
+                width: 100%;
+                height: 100%;
+                background: #9D90EA;
+                opacity: .3;
+                position: absolute;
+            }
+            
+        }
+        
+        .features {
+            .flex(column, flex-start);
+            height: 350px;
+            width: 100%;
+            margin: 20px 0px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            
+            @media @tablet{ 
+                width: 49%;
+                height: 225px;
+            }
+
+            @media @desktop{
+                width: 32%;
+                height: 280px;
+            }
+            
+            p{
+                z-index: +1;
+                margin-left: 20px;
+
+            }
+
+            h1{
+                font-size: 3rem;
+                font-weight: 600;
+                margin-top: 20px;
+                margin-left: 20px;
+                 z-index: +1;
+                // white-space: nowrap;
+
+                @media @tablet {
+                    font-size: 2rem;
+                }
+            }
+
+        }//features
+
+    }//content
+
+}//container

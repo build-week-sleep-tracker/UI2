@@ -1,0 +1,23 @@
+// Mixins Here
+
+.flex(@direction, @justify){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    
+}
+
+.btn-style(@font-size, @width){
+    .flex(row, center);
+    background: @link-bg;
+    font-size: @font-size;
+    width: @width;
+    color:  white;
+    border-radius: 5px;
+    text-decoration: none;
+    align-items: center;
+    text-decoration: none;
+    background: @link-bg;
+    color: white;
+
+}
